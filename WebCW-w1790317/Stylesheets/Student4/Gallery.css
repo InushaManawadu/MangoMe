@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/* Styling navigation bar */
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: #333333;
+    position: relative;
+}
+
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar-container {
+    background-color: #001111;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: #3330D9 2px solid;
+}
+
+.nav-bar-logo {
+    padding: 15px;
+}
+
+.nav-bar-tabs {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.nav-bar-tab-item {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFCC00;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid red;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.dropdown {
+    margin-top: 0px;
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    font-size: 18px;
+    font-family: 'Amatic SC', cursive;
+    background-color: #fff;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFCC07;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.to-home {
+    font-size: 40px;
+    font-weight: 900;
+    color: #3330D9;
+}
+
+.text-a {
+    color: #CF4E74;
+}
+
+.to-home:hover {
+    cursor: pointer;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 38%;
+}
+
+form {
+    padding: 20px;
+    position: relative;
+}
+
+#bgcolor,
+#textcolor {
+    position: absolute;
+    top: 15px;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#bgcolor {
+    left: 5px;
+}
+
+#textcolor {
+    right: 5px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    left: 350px;
+    top: 30px;
+    margin-bottom: 120px;
+}
+
+.slide {
+    width: 800px;
+    display: none;
+    transform: translateX(-7%);
+}
+
+.preview {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: -10.3%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: -8.3%;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.number {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.row {
+    margin-top: 5px;
+    width: 1000px;
+    transform: translateX(-15%);
+}
+
+.preview {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.preview:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.image-caption {
+    width: 100%;
+    height: 10%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    bottom: 0%;
+}
+
+.image-caption p {
+    margin-left: 30px;
+    color: #fff;
+}
+
+.container:hover .image-caption {
+    opacity: 1;
+}
+
+footer {
+    background-color: #001111;
+    padding: 20px;
+    border-top: #3330D9 2px solid;
+    position: relative;
+    color: #BDBDBD;
+    margin-top: -50px;
+    clear: both;
+}
+
+.footerupper {
+    display: flex;
+}
+
+.footerupper div {
+    width: 33.3%;
+    height: 35vh;
+}
+
+.left p {
+    margin: 0;
+}
+
+.left label {
+    color: #fffef1;
+}
+
+.left select {
+    background-color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+}
+
+.mid {
+    display: flex;
+}
+
+.mid-left p {
+    height: 100%;
+}
+
+.mid-left a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    color: #BDBDBD;
+}
+
+.mid-left a:hover {
+    text-decoration: underline;
+    color: #23A6D5;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.mid-center span:hover {
+    text-decoration: underline;
+    color: #23A6D5;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.mid-right .btn:hover {
+    text-decoration: underline;
+    color: #23A6D5;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.mid-right .title {
+    color: #4e6179cc;
+}
+
+.right h1 {
+    color: #4e6179cc;
+    text-align: center;
+}
+
+.right form {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.right form input {
+    float: right;
+    background-color: #BDBDBD;
+    border: #001111 1px solid;
+    border-radius: 5px;
+}
+
+.right form #btn {
+    background-color: transparent;
+    width: 75px;
+    height: 25px;
+    color: #23A6D5;
+    border: #23A6D5 1px solid;
+    float: none;
+    margin: 0 97px;
+    margin-top: 15px;
+    transition: 0.7s;
+}
+
+.right form #btn:hover {
+    color: #000;
+    background-color: #23A6D5;
+    transition: 0.7s;
+}
+
+.footerbelow p {
+    text-align: left;
+    border-top: #BDBDBD 1.5px solid;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 0 0 5px;
+}
+
+.footerbelow a {
+    text-decoration: none;
+    color: #BDBDBD;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 5px;
+    float: right;
+    transition: 1.5s;
+}
+
+.footerbelow span {
+    color: #ffffff;
+}
+
+.footerbelow span:hover {
+    color: #23A6D5;
+    text-decoration: underline;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#pageEditor:hover {
+    color: #3330D9;
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+
+#backtotop:hover {
+    color: #fffef1;
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+
+#fb:hover {
+    color: rgb(53, 83, 152);
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+
+#linkedin:hover {
+    color: rgb(0, 119, 181);
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+
+#tweet:hover {
+    color: rgb(0, 172, 238);
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+
+#Youtube:hover {
+    color: rgb(196, 48, 43);
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}

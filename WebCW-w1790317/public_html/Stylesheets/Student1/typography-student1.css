@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.cusName {
+    font-size: 15px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #FFCC00;
+    font-weight: bold;
+}
+.to-home {
+    font-size: 40px;
+    font-weight: 900;
+    color: #3330D9;
+}
+.text-a {
+    color: #CF4E74;
+}
+
+.middle-des {
+    font-size: 40px;
+    text-align: center;
+}
+
+.item-box {
+    text-align: center;
+    color: black;
+}
+
+.btn-add-to-cart {
+    font-size: 12px;
+}
+
+.btn-add-to-cart:hover {
+    color: white;
+}
+
+.legend-name {
+    color: #012D6B;
+    font-size: 30px;
+}
+
+.item-headings {
+    font-size: 20px;
+}
+
+.item-name {
+    color: black;
+}
+
+.quantity-input {
+    font-size: 20px;
+    color: black;
+}
+
+.btn-remove {
+    color: black;
+    font-size: 15px;
+}
+
+.btn-purchase {
+    font-size: larger;
+}
+
+.btn-purchase:hover {
+    color: black;
+    font-weight: bolder; 
+}
+
+.total {
+    font-size: larger;
+}

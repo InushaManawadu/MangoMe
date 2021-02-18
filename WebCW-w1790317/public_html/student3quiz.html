@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+         <link rel="shortcut icon" href="images/pngwing.com.png">
+
+        <title>Maths Quiz | MongoMe</title>
+
+        <link rel="stylesheet" href="Stylesheets/Student3/student3quizstyle.css"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="nav-bar-container">
+            <div class="nav-bar-logo" onclick="window.location.href='student2mainpage.html'">
+                <img src="images/pngwing.com.png" alt="Icon" width="50px" height="50px">
+                <a id="mainTitle" class="to-home">MangoMe<span class="text-a"> Learning</span></a>
+            </div>
+           <div class="nav-bar-tabs">
+        <ul class="nav-bar-tabs-list">
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="student2mainpage.html">Home</a>
+            </li>
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="student3quiz.html">Quiz</a>
+            </li>
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="#">Collaborate</a>
+            </li>
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="buy.html">Buy Now</a>
+            </li>
+            <li class="nav-bar-tab-item">
+                <a class="nav-link" href="student3Stinfo.html">About Us</a>
+            </li>
+            <div class="dropdown">
+                <a class="nav-link">Articles</a>
+                <div class="dropdown-content">
+                  <a href="articleStudent1.html">Student1</a>
+                  <a href="student2article.html">Student2</a>
+                  <a href="student3solar.html">Student3</a>
+                  <a href="articleStudent4.html">Student4</a>
+                </div>
+                    </div> 
+                </ul>
+            </div>
+        </div>
+        <main>
+            
+            <div id="container">
+                <p id="message" class="structure-elements"></p>
+                <aside id="score" class="structure-elements">Score: <span>00</span></aside>
+
+                <div id="calculation">
+                    <section id="question" class="structure-elements"></section>
+                    <p id="instruction" class="structure-elements">Click on the correct answer</p>
+                    <ul id="choices" class="structure-elements">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <button id="start-reset" class="structure-elements">Start Quiz</button>
+
+                <aside id="time-remaining" class="structure-elements">Time remaining:<span>60</span> sec</aside>
+            </div>
+
+            <div id="game-over" class="structure-elements">
+                <p>Quiz over!</p>
+                <p>Your score is <span>00</span>.</p>
+            </div>
+        </main>
+
+        <script src="JS/main.js"> </script>
+        <footer>
+  <div class="footerupper">
+      <div class="left">
+          <h1>MangoMe <span>Learning</span></h1>
+          <h3>Learn how to learn & change</h3>
+          <p>57 Ramakrishna Rd,<br>Colombo 006<br>Country: <img src="./images/slFlag_thumbnail.jpg" alt="Sri Lankan Flag" width="25px" height="12px"><br>Tel: +94 112 360 212<br>Fax: +94 115 579 432<br>Email: mangome@edu.lk</p><br>
+          <label for="langSelect">Language </label><select name="langSelect" id="langSelect">
+              <option value="English">English</option>
+              <option value="Sinhala">Sinhala</option>
+          </select>
+      </div>
+      <div class="mid">
+          <div class="mid-left">
+              <p>
+                  <a href="student2mainpage.html">Home</a><br>
+                  <a href="student3quiz.html">Quiz</a><br>
+                  <a href="buy.html">Buy Now</a><br>
+                  <a href="Gallery.html">Gallery</a><br>
+                  <a href="student3Stinfo.html">About Us</a><br>
+                  <a href="Site Map.html">Site Map</a>
+                  
+              </p>
+          </div>
+          <div class="mid-center">
+              <p>
+                 <span>About</span><br>
+                 <span>News</span><br>
+                 <span>Careers</span>
+              </p>
+          </div>
+          <div class="mid-right">
+              <p>
+                  <span class="title">Contact</span><br>
+                  <span class="button">Help Center</span><br>
+                  <span class="button">Support Community</span><br>
+              </p><br>
+              <p>
+                  <span class="title">Download our app</span><br>
+                  <span class="button">iOS app</span><br>
+                  <span class="button">Android app</span>
+              </p>
+          </div>
+      </div>
+      <div class="right">
+          <h1>Join with us</h1>
+          <form action="get">
+              <label for="firstname">Name: </label><input type="text" name="textfield" id="firstname"><br><br>
+              <label for="email">E-mail: </label><input type="email" name="email" id="email"><br><br>
+              <label for="contactnumber">Contact No: </label><input type="numbers" name="contactnumber" id="contactnumber"><br><br>
+              <input id="btn" type="button" value="Submit">
+          </form>
+      </div>
+  </div>
+  <div class="footerbelow">
+      <a href="editorspage.html" id="pageEditor" class="fa fa-id-card-o"></a>
+      <a href="#" id="fb" class="fa fa-facebook-square"></a>
+      <a href="#" id="linkedin" class="fa fa-linkedin-square"></a>
+      <a href="#" id="tweet" class="fa fa-twitter-square"></a>
+      <a href="#" id="Youtube" class="fa fa-youtube-play"></a>
+      <a href="#mainTitle" id="backtotop" class="fa fa-caret-square-o-up" alt="Back to Top"></a>
+      <p>&#169 2020 MangoMe Learning | All Rights Reserved | <span id="terms">Terms of use</span> | <span id="policy">Privacy Policy</span></p>
+  </div>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheets/Student2/student2editorstyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Student 02- Editors | MangoMe Learning</title>
+    <link rel="shortcut icon" href="images/pngwing.com.png">
+</head>
+<body>
+    <a id="Home" href="./student2mainpage.html" class="fa fa-home"></a>
+
+<header>
+  <a href="student2mainpage.html" class="menu">TOP</a>
+  <nav>
+    <a href="#bio" class="bio underline">Bio</a>
+    <a href="#education" class="education underline">Education</a>
+    <a href="#skills" class="skills underline">Skills</a>
+  </nav>
+</header>
+
+<section class="section" id="bio">
+  <div class="left">
+    <div id="picture">
+
+    </div>
+  </div>
+  <div class="right">
+    <article>
+      <h1 id="name">Nadila Gurusinghe</h1>
+      <p>I've always been interested in the technology since earliest days I can recall. In my school days I've participated in competetions, presented in exhibitions which lead me to the coding sector. My target is to build my career as software engineer and developer.</p>
+      
+    </article>
+   <div class="contact">
+    <div>
+                <a href="#" id="fb" class="fa fa-facebook-square"></a>
+                <a href="#" id="linkedin" class="fa fa-linkedin-square"></a>
+                <a href="#" id="tweet" class="fa fa-twitter-square"></a>
+                <a href="#" id="Youtube" class="fa fa-youtube-play"></a>
+    </div>            
+    </div>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <h2 class="title education underline">Education</h2>
+  <div class="history">
+    <div class="entry">
+        <span class="place">Dharmaraja</span>
+        <span class="time">2006-2019</span>
+      </h3>
+      <p> G.C.E (Odinary Level)- 5As 3Bs 1C</p>
+      <p> G.C.E (Advanced Level)-2Cs 1S- Physical Science Stream</p>
+
+    </div>       
+  </div>
+  
+</section>
+
+<section class="section" id="skills">
+  <h2 class="title skills underline">Skills</h2>
+  
+  <div class="category">
+    <h3>General:</h3>
+    <ul>
+      <li class="skill" data-level="1">
+        <h4>Java Programming</h4>
+        <div class="bar"></div>
+      </li>
+      <li class="skill" data-level="2">
+        <h4>Python Programming</h4>
+        <div class="bar"></div>
+      </li>
+      <li class="skill" data-level="3">
+        <h4>JavaScript</h4>
+        <div class="bar"></div>
+      </li>
+      <li class="skill" data-level="4">
+        <h4>Leadership</h4>
+        <div class="bar"></div>
+      </li>
+      <li class="skill" data-level="5">
+        <h4>Communication</h4>
+        <div class="bar"></div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="category">
+    <h3>Language:</h3>
+    <ul>
+      <li class="skill" data-level="6">
+        <h4>English</h4>
+        <div class="bar"></div>
+      </li>
+      <li class="skill" data-level="7">
+        <h4>Sinhala</h4>
+        <div class="bar"></div>
+      </li>
+    </ul>
+  </div>
+  
+</section>
+
+<footer class="footer">
+<a href="#bio" id="backtotop" class="fa fa-caret-square-o-up" alt="Back to Top"></a>
+  
+  
+</footer>
+<script>
+    $(document).ready(function() {
+  $("header .menu").on("click", function(evt) {
+    evt.preventDefault();
+    $(this).toggleClass("toggled");
+  });
+  
+  $("header nav").on("click", "a", function() {
+    $(this).closest("header").find(".menu.toggled").toggleClass("toggled");
+  });
+});
+</script>
+</body>
+</html>
